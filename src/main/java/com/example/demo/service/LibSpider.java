@@ -70,6 +70,7 @@ public class LibSpider {
                         for (Subscription sub:
                                 list) {
                             sub.setSended(true);
+                            sub.setBookName(matcher.group(1));
                             subscriptionRepository.save(sub);
                         }
                     }

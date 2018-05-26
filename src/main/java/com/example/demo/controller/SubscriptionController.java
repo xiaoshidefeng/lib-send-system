@@ -36,8 +36,6 @@ public class SubscriptionController {
         } else {
             return "redirect:/add_error";
         }
-
-
     }
 
     @RequestMapping("/add_success")

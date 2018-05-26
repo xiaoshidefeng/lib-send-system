@@ -28,6 +28,9 @@ public class Subscription {
     @Column(name = "sended")
     private boolean sended;
 
+    @Column(name = "book_name")
+    private String bookName;
+
     public int getId() {
         return id;
     }
@@ -66,5 +69,13 @@ public class Subscription {
 
     public void setSended(boolean sended) {
         this.sended = sended;
+    }
+
+    public String getBookName() {
+        return bookName;
+    }
+
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
     }
 }

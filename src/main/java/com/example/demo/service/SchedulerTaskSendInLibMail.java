@@ -33,9 +33,7 @@ public class SchedulerTaskSendInLibMail {
              list) {
             String email = sub.getEmail();
             String url = sub.getUrl();
-
             libSpider.Get_Url(url, email);
-
         }
     }
 }
